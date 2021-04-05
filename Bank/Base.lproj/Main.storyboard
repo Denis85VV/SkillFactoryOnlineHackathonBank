@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="dsw-cH-QTE">
+            <objects>
+                <viewController id="8rN-2s-tjo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="klV-6I-6n4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter amount..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="afc-pC-WY1">
+                                <rect key="frame" x="57" y="379" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3cU-E3-QVT"/>
+                                    <constraint firstAttribute="width" constant="300" id="s6P-aN-ZjV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" smartInsertDeleteType="yes"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVW-jd-oKU">
+                                <rect key="frame" x="107" y="472" width="200" height="70"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Gg6-4F-S7x"/>
+                                    <constraint firstAttribute="height" constant="70" id="PPD-yF-bhS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Withdrawal"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qq6-5j-bxK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="afc-pC-WY1" firstAttribute="centerX" secondItem="Qq6-5j-bxK" secondAttribute="centerX" id="AQg-25-H98"/>
+                            <constraint firstItem="gVW-jd-oKU" firstAttribute="leading" secondItem="Qq6-5j-bxK" secondAttribute="leading" constant="107" id="GIt-7j-dWp"/>
+                            <constraint firstItem="gVW-jd-oKU" firstAttribute="centerX" secondItem="afc-pC-WY1" secondAttribute="centerX" id="g1J-tC-V8d"/>
+                            <constraint firstItem="gVW-jd-oKU" firstAttribute="top" secondItem="afc-pC-WY1" secondAttribute="bottom" constant="43" id="g6b-MU-4Rd"/>
+                            <constraint firstItem="afc-pC-WY1" firstAttribute="centerY" secondItem="Qq6-5j-bxK" secondAttribute="centerY" id="iOV-Oa-fdh"/>
+                            <constraint firstItem="Qq6-5j-bxK" firstAttribute="trailing" secondItem="gVW-jd-oKU" secondAttribute="trailing" constant="107" id="qrj-pI-UJo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6I6-fq-g91" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-613.04347826086962" y="59.598214285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="6uD-cj-yAU">
+                                <rect key="frame" x="57" y="315.5" width="300" height="275"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZY-ve-qfn">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="1lc-rs-9PY"/>
+                                            <constraint firstAttribute="height" constant="50" id="6Jt-et-Jgc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Отображение баланса">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Fby-Ia-JJP" kind="presentation" id="SiZ-eM-iD8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNV-yS-rbf">
+                                        <rect key="frame" x="0.0" y="75" width="300" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="BAv-BC-rF4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Снятие наличных">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="8rN-2s-tjo" kind="presentation" id="KNd-it-Wvh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3b-ZM-h84">
+                                        <rect key="frame" x="0.0" y="150" width="300" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="IcA-nR-t8h"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Пополнение депозита">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="dQQ-gu-x3F" kind="presentation" id="qNy-fB-arn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O59-mC-AKt">
+                                        <rect key="frame" x="0.0" y="225" width="300" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dbA-Vi-93n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Пополнение телефона">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="gjs-11-lKj" kind="presentation" id="T7E-1n-VxY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6uD-cj-yAU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ATd-uf-twv"/>
+                            <constraint firstItem="6uD-cj-yAU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dBU-et-Uws"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="59.598214285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BFj-nL-BBc">
+            <objects>
+                <viewController id="gjs-11-lKj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fum-n9-Efv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter amount..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J0x-Fp-dVS">
+                                <rect key="frame" x="57" y="379" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="D5z-9N-3tF"/>
+                                    <constraint firstAttribute="width" constant="300" id="vZb-Ji-Bsw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" smartInsertDeleteType="yes"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7X-SI-mdx">
+                                <rect key="frame" x="57" y="459" width="300" height="70"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="3OR-gP-jS2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="7zp-d0-vLb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Deposit to phone"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter phone number..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XDS-HU-Ikb">
+                                <rect key="frame" x="57" y="296" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3N3-Im-hjZ"/>
+                                    <constraint firstAttribute="width" constant="300" id="ZnW-jl-xfd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" smartInsertDeleteType="yes"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nPF-yH-vch"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J0x-Fp-dVS" firstAttribute="centerX" secondItem="nPF-yH-vch" secondAttribute="centerX" id="GPu-Of-zj7"/>
+                            <constraint firstItem="X7X-SI-mdx" firstAttribute="centerX" secondItem="J0x-Fp-dVS" secondAttribute="centerX" id="IlZ-ai-iD0"/>
+                            <constraint firstItem="X7X-SI-mdx" firstAttribute="top" secondItem="J0x-Fp-dVS" secondAttribute="bottom" constant="30" id="Jgq-xh-ZCr"/>
+                            <constraint firstItem="J0x-Fp-dVS" firstAttribute="centerY" secondItem="nPF-yH-vch" secondAttribute="centerY" id="PXV-g6-kd8"/>
+                            <constraint firstItem="XDS-HU-Ikb" firstAttribute="top" secondItem="nPF-yH-vch" secondAttribute="top" constant="296" id="Y0C-f8-Yea"/>
+                            <constraint firstItem="XDS-HU-Ikb" firstAttribute="centerX" secondItem="J0x-Fp-dVS" secondAttribute="centerX" id="bm4-PG-3No"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RMF-Ch-nAb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="745"/>
+        </scene>
+        <!--BalanceVC-->
+        <scene sceneID="DLD-cc-kg7">
+            <objects>
+                <viewController id="Fby-Ia-JJP" customClass="BalanceVC" customModule="Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WBH-Yr-hNl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avP-VL-Ayp">
+                                <rect key="frame" x="10" y="275" width="394" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 18 329" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="at2-eU-rEj">
+                                <rect key="frame" x="90.5" y="368" width="233" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bp7-tM-hXF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="at2-eU-rEj" firstAttribute="centerX" secondItem="Bp7-tM-hXF" secondAttribute="centerX" id="0y3-p0-RYX"/>
+                            <constraint firstItem="at2-eU-rEj" firstAttribute="centerY" secondItem="Bp7-tM-hXF" secondAttribute="centerY" id="8yb-nO-rdZ"/>
+                            <constraint firstItem="avP-VL-Ayp" firstAttribute="leading" secondItem="Bp7-tM-hXF" secondAttribute="leading" constant="10" id="kJd-h0-9au"/>
+                            <constraint firstItem="at2-eU-rEj" firstAttribute="top" secondItem="avP-VL-Ayp" secondAttribute="bottom" constant="46" id="z4r-9x-RSA"/>
+                            <constraint firstItem="Bp7-tM-hXF" firstAttribute="trailing" secondItem="avP-VL-Ayp" secondAttribute="trailing" constant="10" id="zQw-m9-o73"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="balance" destination="at2-eU-rEj" id="1La-F3-Nco"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhg-6h-zhv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="-611"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="O4x-x4-pMW">
+            <objects>
+                <viewController id="dQQ-gu-x3F" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0qO-0S-gUX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter amount..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eNd-iz-C0t">
+                                <rect key="frame" x="57" y="379" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="35B-V5-50N"/>
+                                    <constraint firstAttribute="width" constant="300" id="bpI-FL-Sfx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" smartInsertDeleteType="yes"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ni-CD-7Jt">
+                                <rect key="frame" x="107" y="474" width="200" height="70"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="1bL-eh-Mur"/>
+                                    <constraint firstAttribute="width" constant="200" id="Diw-Pz-7pe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Deposit"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="chr-SC-IrD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Ni-CD-7Jt" firstAttribute="top" secondItem="eNd-iz-C0t" secondAttribute="bottom" constant="45" id="AP4-N1-FGl"/>
+                            <constraint firstItem="eNd-iz-C0t" firstAttribute="centerY" secondItem="chr-SC-IrD" secondAttribute="centerY" id="CGW-EO-5lA"/>
+                            <constraint firstItem="8Ni-CD-7Jt" firstAttribute="centerX" secondItem="eNd-iz-C0t" secondAttribute="centerX" id="GIy-b5-Won"/>
+                            <constraint firstItem="eNd-iz-C0t" firstAttribute="centerX" secondItem="chr-SC-IrD" secondAttribute="centerX" id="ZhE-7o-qQO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xUp-ol-DBt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="60"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
