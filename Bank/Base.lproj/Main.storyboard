@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WithdrawalVC-->
         <scene sceneID="dsw-cH-QTE">
             <objects>
-                <viewController id="8rN-2s-tjo" sceneMemberID="viewController">
+                <viewController id="8rN-2s-tjo" customClass="WithdrawalVC" customModule="Bank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="klV-6I-6n4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,6 +34,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="Withdrawal"/>
+                                <connections>
+                                    <action selector="withdrawalAmountAction:" destination="8rN-2s-tjo" eventType="touchUpInside" id="qFR-VA-QK8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qq6-5j-bxK"/>
@@ -47,6 +50,9 @@
                             <constraint firstItem="Qq6-5j-bxK" firstAttribute="trailing" secondItem="gVW-jd-oKU" secondAttribute="trailing" constant="107" id="qrj-pI-UJo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="withdrawalAmauntField" destination="afc-pC-WY1" id="itF-Ou-r5j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6I6-fq-g91" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,12 +128,22 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcV-UH-V9B">
+                                <rect key="frame" x="122" y="620" width="170" height="153"/>
+                                <connections>
+                                    <action selector="removePrevBalance:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nO2-jN-JtZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6uD-cj-yAU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ATd-uf-twv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EcV-UH-V9B" secondAttribute="bottom" constant="89" id="B2e-ws-BZ0"/>
+                            <constraint firstItem="EcV-UH-V9B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="Ynj-3Y-tUt"/>
                             <constraint firstItem="6uD-cj-yAU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dBU-et-Uws"/>
+                            <constraint firstItem="EcV-UH-V9B" firstAttribute="top" secondItem="6uD-cj-yAU" secondAttribute="bottom" constant="29.5" id="lh1-H2-UW2"/>
+                            <constraint firstItem="EcV-UH-V9B" firstAttribute="centerX" secondItem="O59-mC-AKt" secondAttribute="centerX" id="xYj-vV-lEG"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -227,10 +243,10 @@
             </objects>
             <point key="canvasLocation" x="138" y="-611"/>
         </scene>
-        <!--View Controller-->
+        <!--DepositVC-->
         <scene sceneID="O4x-x4-pMW">
             <objects>
-                <viewController id="dQQ-gu-x3F" sceneMemberID="viewController">
+                <viewController id="dQQ-gu-x3F" customClass="DepositVC" customModule="Bank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0qO-0S-gUX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,6 +269,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="Deposit"/>
+                                <connections>
+                                    <action selector="depositButtonAction:" destination="dQQ-gu-x3F" eventType="touchUpInside" id="aBY-bv-BJt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="chr-SC-IrD"/>
@@ -264,6 +283,9 @@
                             <constraint firstItem="eNd-iz-C0t" firstAttribute="centerX" secondItem="chr-SC-IrD" secondAttribute="centerX" id="ZhE-7o-qQO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="depositAmauntField" destination="eNd-iz-C0t" id="p79-Qv-Nfm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xUp-ol-DBt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

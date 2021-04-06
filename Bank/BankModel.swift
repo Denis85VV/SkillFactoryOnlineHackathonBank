@@ -7,7 +7,6 @@
 
 import Foundation
 import RealmSwift
-import Realm
 
 class BankModel: Object {
     @objc dynamic var balance = 0

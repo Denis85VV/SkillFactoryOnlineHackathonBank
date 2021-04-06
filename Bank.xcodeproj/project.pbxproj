@@ -10,6 +10,8 @@
 		B3A52C2C8BA628404B97DB38 /* Pods_Bank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9F04EC8B27C9B5402A9063 /* Pods_Bank.framework */; };
 		FD0658F42619046200BE7F19 /* BalanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0658F32619046200BE7F19 /* BalanceVC.swift */; };
 		FD0658F7261A407900BE7F19 /* BankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0658F6261A407900BE7F19 /* BankModel.swift */; };
+		FD06590D261BAAE800BE7F19 /* DepositVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD06590C261BAAE800BE7F19 /* DepositVC.swift */; };
+		FD065910261CCC3D00BE7F19 /* WithdrawalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD06590F261CCC3C00BE7F19 /* WithdrawalVC.swift */; };
 		FD1B8D7D2613D635002BC3D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B8D7C2613D635002BC3D2 /* AppDelegate.swift */; };
 		FD1B8D7F2613D635002BC3D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B8D7E2613D635002BC3D2 /* SceneDelegate.swift */; };
 		FD1B8D812613D635002BC3D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B8D802613D635002BC3D2 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 		BD9F04EC8B27C9B5402A9063 /* Pods_Bank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0658F32619046200BE7F19 /* BalanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceVC.swift; sourceTree = "<group>"; };
 		FD0658F6261A407900BE7F19 /* BankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankModel.swift; sourceTree = "<group>"; };
+		FD06590C261BAAE800BE7F19 /* DepositVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositVC.swift; sourceTree = "<group>"; };
+		FD06590F261CCC3C00BE7F19 /* WithdrawalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalVC.swift; sourceTree = "<group>"; };
 		FD1B8D792613D635002BC3D2 /* Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1B8D7C2613D635002BC3D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD1B8D7E2613D635002BC3D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,11 +92,13 @@
 				FD1B8D7E2613D635002BC3D2 /* SceneDelegate.swift */,
 				FD1B8D802613D635002BC3D2 /* ViewController.swift */,
 				FD1B8D822613D635002BC3D2 /* Main.storyboard */,
+				FD06590C261BAAE800BE7F19 /* DepositVC.swift */,
 				FD1B8D852613D636002BC3D2 /* Assets.xcassets */,
 				FD1B8D872613D636002BC3D2 /* LaunchScreen.storyboard */,
 				FD1B8D8A2613D636002BC3D2 /* Info.plist */,
 				FD0658F32619046200BE7F19 /* BalanceVC.swift */,
 				FD0658F6261A407900BE7F19 /* BankModel.swift */,
+				FD06590F261CCC3C00BE7F19 /* WithdrawalVC.swift */,
 			);
 			path = Bank;
 			sourceTree = "<group>";
@@ -196,8 +202,10 @@
 				FD1B8D812613D635002BC3D2 /* ViewController.swift in Sources */,
 				FD0658F7261A407900BE7F19 /* BankModel.swift in Sources */,
 				FD0658F42619046200BE7F19 /* BalanceVC.swift in Sources */,
+				FD065910261CCC3D00BE7F19 /* WithdrawalVC.swift in Sources */,
 				FD1B8D7D2613D635002BC3D2 /* AppDelegate.swift in Sources */,
 				FD1B8D7F2613D635002BC3D2 /* SceneDelegate.swift in Sources */,
+				FD06590D261BAAE800BE7F19 /* DepositVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
